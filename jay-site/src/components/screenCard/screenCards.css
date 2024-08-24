@@ -1,0 +1,55 @@
+*{
+    /* scroll-margin-block: 100vh; */
+    scroll-snap-type: y mandatory;
+}
+/* logotext section */
+.screenCard{
+    margin: none;
+    text-align: center;
+    justify-self: center;
+    background-image: url(../../assets/projectAndShits.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1vw;
+}
+.backdrop{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background: black;
+    height: 100vh;
+    max-height: 100%;
+    width: 98%;
+    align-items: center;
+    overflow: hidden;
+}
+#middleText{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-justify:distribute;
+    color: white;
+    font-size: 2vw;
+    padding-top: 0.3vw;
+    letter-spacing: 0.5vw;
+    animation: stretch 6s infinite;
+}
+@keyframes stretch{
+    0% {letter-spacing: 0.5vw}
+    50% {letter-spacing:1vw}
+    100% {letter-spacing: 0.5vw}
+}
+
+/* about me section */
+.screenCard2{
+    background: blue;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
