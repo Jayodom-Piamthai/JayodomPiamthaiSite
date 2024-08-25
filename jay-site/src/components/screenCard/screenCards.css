@@ -1,8 +1,16 @@
 *{
     /* scroll-margin-block: 100vh; */
-    scroll-snap-type: y mandatory;
-    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  
 }
+* ::-webkit-scrollbar {
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+}
+  
 /* logotext section */
 .screenCard{
     vertical-align: middle;
@@ -13,17 +21,17 @@
     background-position: center;
     background-position-y: center;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit--clip: text;
     color: transparent;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 .backdrop{
+    scroll-snap-align: center;
     display: grid;/*purely for vertical alignment*/
     padding-left: 1vw;
     padding-right: 1vw;
     background: black;
     height: 100vh;
-    max-height: 100%;
     width: 98%;
     align-items: center;
     overflow: hidden;
@@ -37,7 +45,7 @@
     font-size: 2.55vw;
     padding-top: 0.3vw;
     letter-spacing: 0.5vw;
-    animation: stretch 6s infinite;
+    animation: stretch ease 6s infinite;
     mix-blend-mode: difference; /*happy accident*/
     filter: invert(1);
 }
@@ -48,9 +56,22 @@
     80% {letter-spacing: 0.5vw}
     100% {letter-spacing: 0.5vw}
 }
+#down{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    animation: updown 2s ease-in-out infinite;  
+}
+@keyframes updown{
+    0% {top: 0px;}
+    50% {top: 30px;}
+    100% {top: 0px;}
+}
+
 
 /* about me section */
 .screenCard2{
+    scroll-snap-align: center;
     vertical-align: middle;
     align-items: center;
     text-align: center;
@@ -65,11 +86,11 @@
     vertical-align: middle;
     text-align: center;
     margin-top: 2vw;
-    background-image: url('../../assets/ace2.jpg');
+    background-image: url('../../assets/ace3.jpg');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    background-position-y: -100vw;
+    background-position-y: -30vw;
     background-attachment: fixed;
     letter-spacing: 3.3vw;
 }
@@ -82,7 +103,6 @@
 .nameBanner h2{
     font-size: 9vh;
     mix-blend-mode: difference;
-    filter:hue-rotate(0.55);
     color: rgb(0, 255, 106);
 }
 .doubleContainer{
@@ -94,7 +114,7 @@
 #block1{
     grid-column: 1;
     /* height: 50vh; */
-    /* border: solid red 2px; */
+    /* border: solid # 2px; */
     padding: 3vw;
 }
 #block2{
@@ -104,21 +124,69 @@
     padding: 3vw;
 }
 .blackBox{
+    display:grid;
+    grid-template-rows: 25% 55% 20%;
     vertical-align: middle;
-    height: 55vh;
-    /* color: white; */
-    padding: 1vw;
+    height: 53vh;
+    color: white;
+    padding-top:1vw ;
+    padding: 2vw;
     background: black;
     border-radius: 3vh;
     /* border: solid red 2px; */
+    
 }
 .blackBox h2{
-    padding-top:1vw ;
-    padding: 1vw;
-    font-size: 1.66vw;
+    text-align: justify;
+    font-size: 1.5vw;
     color: #0066FF;
     mix-blend-mode:difference;
 }
 .backgrid{
     display: grid;
+}
+#name{
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    
+}
+.blackButton h2{
+    position: relative;
+    display: grid;
+    vertical-align: middle;
+    text-align: center;
+    background: black;
+    padding: 1vw;
+    color: white;
+    border: solid #0066FF 1px;
+    border-radius: 10px;
+    animation: updown 2s infinite;
+}
+.blackButton2 h2{
+    position: relative;
+    display: grid;
+    vertical-align: middle;
+    text-align: center;
+    background: black;
+    padding: 1vw;
+    color: white;
+    border: solid #0066FF 1px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.blackButton2:hover {letter-spacing: 10px; }
+
+
+/*fullStack*/
+.screenCard3{
+    scroll-snap-align: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background: #ff6600;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
 }
