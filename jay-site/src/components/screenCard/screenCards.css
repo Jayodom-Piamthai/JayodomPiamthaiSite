@@ -125,7 +125,7 @@
 }
 .blackBox{
     display:grid;
-    grid-template-rows: 25% 55% 20%;
+    grid-template-rows: 20% 60% 20%;
     vertical-align: middle;
     height: 53vh;
     color: white;
@@ -189,4 +189,41 @@
     width: 100%;
     align-items: center;
     overflow: hidden;
+}
+.full{
+    font-size: 3vw;
+    color: red;
+    margin-top: 3vw;
+    width: 90vw;
+    height: 7vw;
+    background-image: url('../../assets/wordart.png');
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode:exclusion;
+    animation: hotline 10s ease-in-out infinite,miami 3s ease-in-out infinite;
+}
+@keyframes hotline {
+    0% {transform:rotate(5deg)}
+    50% {transform:rotate(-5deg)}
+    100% {transform:rotate(5deg)}
+}
+@keyframes miami{
+    0%{filter: invert(1);}
+    50%{filter: invert(0);}
+    100%{filter: invert(1);}
+}
+.wow{
+    position: absolute;
+    margin-top: -5vw;
+    right: 9vw;
+    width: 16vw;
+    height: 10vw;
+    background-image: url('../../assets/wordart(2).png');
+    background-position: center;
+    background-size: cover;
+}
+img{
+    height: 9vw;
+    padding: 0.7vw;
+
 }
