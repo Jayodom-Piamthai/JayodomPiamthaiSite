@@ -4,6 +4,8 @@
 import AboutMe from "./components/screenCard/aboutMe"
 import FullStack from "./components/screenCard/fullStack"
 import LogoText from "./components/screenCard/logoText"
+import Security from "./components/screenCard/Security"
+import End from "./components/screenCard/endCard"
 import './portfolio.css'
 function Portfolio() {
     return(
@@ -12,6 +14,8 @@ function Portfolio() {
             <LogoText/>
             <AboutMe/>
             <FullStack/>
+            <Security/>
+            <End/>
         </div>
     )
 }

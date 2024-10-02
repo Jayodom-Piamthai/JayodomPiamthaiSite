@@ -10,7 +10,8 @@
     mix-blend-mode: difference; /*happy accident*/
     filter: invert(1);
 }
-  
+
+
 /* logotext section */
 .screenCard{
     vertical-align: middle;
@@ -51,6 +52,7 @@
 }
 @keyframes stretch{
     0% {letter-spacing: 0.5vw}
+    20% {letter-spacing: 0.5vw; color: #ffffff;}
     40% {letter-spacing:1vw ; color: #ffa600;}
     70% {letter-spacing:1vw ; color: #ffa600;}
     80% {letter-spacing: 0.5vw}
@@ -226,4 +228,154 @@ img{
     height: 9vw;
     padding: 0.7vw;
 
+}
+
+/* security */
+.screenCard4{
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background: #FF0066;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titleBlock{
+    position: absolute;
+    left: 0vw;
+    background: black;
+    padding: 1vw;
+    margin-top: 3vw;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    
+}
+.fancy{
+    animation: lightshow 7s infinite;
+}
+@keyframes lightshow{
+    0% {color: #6600FF;}
+    12% {color: #0066FF;}
+    24% {color: #00ff66;}
+    50% {color: #66ff00;}
+    62% {color:#ff6600;}
+    74% {color:#FF0066;}
+    86% {color: white;}
+    100% {color: #6600FF;}
+}
+.textBox{
+    font-size:15px;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 25vh;
+    height: 60vh;
+    width: 80vw;
+    color: white;
+    padding-top:1vw ;
+    padding: 2vw;
+    background: black;
+    /* border: solid red 2px; */
+    
+}
+.textBox h2::after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  .titleBlock ::after {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+
+  /* endCard */
+  .screenCard5{
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+.triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 180px 312px 180px;
+    border-color: transparent transparent black transparent;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    transform: rotate(90deg);
+    animation: rotato linear  6s infinite;
+ }
+ /* HTML: <div class="hexagon"></div> */
+.hexagon {
+    position: absolute;
+    height: 500px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #000000;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    animation: rotato linear  9s infinite;
+  }
+ @keyframes rotato{
+    0% {transform: rotate(0deg);background: black;}
+    25% {transform: rotate(90deg);background:#FF0066;}
+    50% {transform: rotate(180deg);background:#ff6600;}
+    75% {transform: rotate(270deg);background:#0066FF;}
+    100% {transform: rotate(360deg);background: black;}
+ }
+ .return{
+    margin: 8vw;
+
+ }
+ a{
+    font-size: 20px;
+    z-index: 3;
+ }
+
+ .uptop{
+    color: white;
+    position: relative;
+    bottom: 80vh;
+    right: 40vw;
+    animation: updown2 2s ease-in-out infinite;  
+ }
+ @keyframes updown2{
+    0% {bottom: 75vh;}
+    50% {bottom: 80vh;}
+    100% {bottom: 75vh;}
+}
+.mail{
+    z-index: 1;
 }
