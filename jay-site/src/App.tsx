@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Hello from './components/hello'
-import CardFormat from './components/screenCard/cardFormat'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +23,6 @@ function App() {
           count is {count}
         </button>
         <Hello/>
-        <CardFormat/>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -32,7 +30,6 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <CardFormat/>
     </>
   )
 }
