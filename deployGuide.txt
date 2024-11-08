@@ -1,0 +1,26 @@
+for future me:
+
+for githubPage:  npm install gh-pages --save-dev
+
+
+add these to package.json
+
+"homepage": "https://jayodom-piamthai.github.io/JayodomPiamthaiSite/"
+//    https://<githubname>.github.io/<repositoryname>/
+"predeploy": "npm run build"
+"deploy": "gh-pages-clean gh-pages -d dist"
+
+add this to vite.config.ts in export default:
+
+base : "/JayodomPiamthaiSite/"
+
+deploy page with:
+
+npm run deploy
+
+after its done change "deploy" to "deploy": "gh-pages -d dist"
+then run deploy again
+
+should work.
+
+  
