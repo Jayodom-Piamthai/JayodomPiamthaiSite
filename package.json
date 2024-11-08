@@ -1,9 +1,9 @@
 {
-  "homepage": "https://jayodom-piamthai.github.io/JayodomPiamthaiSite",
+  "homepage": "https://jayodom-piamthai.github.io/JayodomPiamthaiSite/",
   "name": "jay-site",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "module", 
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
