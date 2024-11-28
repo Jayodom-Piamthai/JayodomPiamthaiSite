@@ -19,7 +19,7 @@ deploy page with:
 npm run deploy
 
 after its done change "deploy" to "deploy": "gh-pages -d dist"
-then run deploy again
+then npm run deploy again
 
 should work.
 

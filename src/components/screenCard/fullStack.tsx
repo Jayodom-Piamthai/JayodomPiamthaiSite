@@ -11,15 +11,15 @@ function FullStack(){
                 <h1>software and tools</h1>
                 <br />
                 <div>
-                    <img src="./src/assets/logo/html.png" alt="" />
-                    <img src="./src/assets/logo/css.png" alt="" />
-                    <img src="./src/assets/logo/js.png" alt="" />
-                    <img src="./src/assets/logo/bootstrap.png" alt="" />
-                    <img src="./src/assets/logo/express.png" alt="" />
-                    <img src="./src/assets/logo/react.png" alt="" />
-                    <img src="./src/assets/logo/docker.png" alt="" />
-                    <img src="./src/assets/logo/mysql.png" alt="" />
-                    <img src="./src/assets/logo/github.png" alt="" />
+                    <img src="./src/assets/html.png" alt="" />
+                    <img src="./src/assets/css.png" alt="" />
+                    <img src="./src/assets/js.png" alt="" />
+                    <img src="./src/assets/bootstrap.png" alt="" />
+                    <img src="./src/assets/express.png" alt="" />
+                    <img src="./src/assets/react.png" alt="" />
+                    <img src="./src/assets/docker.png" alt="" />
+                    <img src="./src/assets/mysql.png" alt="" />
+                    <img src="./src/assets/github.png" alt="" />
                     <h2>some of these are also used to make this site!</h2>
                 </div>
             </div>
