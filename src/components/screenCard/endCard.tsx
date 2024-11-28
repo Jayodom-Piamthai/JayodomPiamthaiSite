@@ -16,7 +16,7 @@ function End(){
         <h3>made with love and laughter from <span>THAILAND</span></h3>
         <h3>JAYODOM "ACE" PIAMTHAI © 2024</h3>
 
-        <div className='uptop'><h2>to the top</h2></div>
+        <div className='uptop'><a href="#top">&lt; click to return the top &gt; </a></div>
     </div>
     </div>
     )
