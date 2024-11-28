@@ -1,12 +1,12 @@
-import html from './src/assets/html.png'
-import css from './src/assets/css.png'
-import js from './src/assets/js.png'
-import boots from './src/assets/bootstrap.png'
-import exps from './src/assets/express.png'
-import react from './src/assets/react.png'
-import dock from './src/assets/docker.png'
-import sql from './src/assets/mysql.png'
-import github from './src/assets/github.png'
+import html from '../../assets/html.png'
+import css from '../../assets/css.png'
+import js from '../../assets/js.png'
+import boots from '../../assets/bootstrap.png'
+import exps from '../../assets/express.png'
+import react from '../../assets/react.png'
+import dock from '../../assets/docker.png'
+import sql from '../../assets/mysql.png'
+import github from '../../assets/github.png'
 
 function FullStack(){
     return(
