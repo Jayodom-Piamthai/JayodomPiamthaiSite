@@ -27,7 +27,7 @@ function FullStack(){
                     <img src={boots} alt="" />
                     <img src={exps} alt="" />
                     <img src={react} alt="" />
-                    <img src={react} alt="" />
+                    <img src={dock} alt="" />
                     <img src={sql} alt="" />
                     <img src={github} alt="" />
                     <h2>some of these are also used to make this site!</h2>
