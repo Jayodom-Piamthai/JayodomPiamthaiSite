@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import AboutMe from "./components/screenCard/aboutMe"
 import FullStack from "./components/screenCard/fullStack"
+import FullStack2 from "./components/screenCard/fullStack2"
 import LogoText from "./components/screenCard/logoText"
 import Security from "./components/screenCard/Security"
 import End from "./components/screenCard/endCard"
@@ -14,6 +15,7 @@ function Portfolio() {
             <LogoText/>
             <AboutMe/>
             <FullStack/>
+            <FullStack2/>
             <Security/>
             <End/>
         </div>
