@@ -1,34 +1,25 @@
-import html from '../../assets/html.png'
-import css from '../../assets/css.png'
-import js from '../../assets/js.png'
-import boots from '../../assets/bootstrap.png'
-import exps from '../../assets/express.png'
-import react from '../../assets/react.png'
-import dock from '../../assets/docker.png'
-import sql from '../../assets/mysql.png'
-import github from '../../assets/github.png'
+import spotReview from '../../assets/spotReview.mp4'
+import schema from '../../assets/schema.png'
+
 
 function FullStack2(){
     return(
         <div className="screenCard3">
             <div>
-                <div className="full">SPOTIFY WEBSITE</div>
-                <h2>spotify mock website </h2>
-                <h5>*text may be greatly exaggerated  </h5>
+                <br /><br /><br />
+                <div className='titleHead'>
+                    <h1 className='title'>-- SPOTIFY WEBSITE --</h1> <br />
+                    <h2>spotify mock website made with php whih mysql database that is able to search for music <br />
+                        login to user account and save history for music listening
+                    </h2>
+                </div>
                 <br />
-                <h1>software and tools</h1>
                 <br />
                 <div>
-                    <img src={html} alt="" />
-                    <img src={css} alt="" />
-                    <img src={js} alt="" />
-                    <img src={boots} alt="" />
-                    <img src={exps} alt="" />
-                    <img src={react} alt="" />
-                    <img src={dock} alt="" />
-                    <img src={sql} alt="" />
-                    <img src={github} alt="" />
-                    <h2>some of these are also used to make this site!</h2>
+                <video className='fullThumb' controls>
+                    <source src={spotReview}></source>
+                </video>
+                <img src={schema} alt=""  className='fullThumb'/>
                 </div>
             </div>
         </div>

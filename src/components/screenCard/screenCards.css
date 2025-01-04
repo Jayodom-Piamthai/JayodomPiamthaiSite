@@ -180,6 +180,22 @@
 
 
 /*fullStack*/
+.title{
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 0.66vw;
+}
+.titleHead{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: black;
+    color: #ff6600;
+}
+.fullThumb{
+    width: 40vw;
+    height: 20vw;
+
+}
 .screenCard3{
     scroll-snap-align: center;
     vertical-align: middle;
