@@ -3,7 +3,7 @@ const app = express()
 import fs from 'fs'
 import path from 'path'
 
-app.set('view engine','ejs')
+// app.set('view engine','ejs')
 
 app.get('/' , (req,res) =>{
     fs.readFile(path.resolve('./index.html '),'utf-8',(err,data)=>{
