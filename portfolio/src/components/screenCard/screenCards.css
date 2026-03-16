@@ -171,6 +171,7 @@
     text-align: center;
     background: black;
     padding: 1vw;
+    margin-top: -5vw;
     color: white;
     border: solid #0066FF 1px;
     border-radius: 10px;
@@ -341,6 +342,12 @@ img{
     align-items: center;
     overflow: hidden;
 }
+/* link effect */
+#link{
+    size: 30px;
+    color: #ffff00;
+    mix-blend-mode: difference; /*happy accident*/
+}
 .triangle {
     position: absolute;
     width: 0px;
@@ -356,13 +363,23 @@ img{
  /* HTML: <div class="hexagon"></div> */
 .hexagon {
     position: absolute;
-    height: 500px; /* adjust to control the size  */
+    height: 300px; /* adjust to control the size  */
     aspect-ratio: 1/cos(30deg);
     clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
     background: #000000;
     mix-blend-mode: difference; /*happy accident*/
     filter: invert(1);
-    animation: rotato linear  9s infinite;
+    animation: rotato linear  15s infinite;
+  }
+.hexagon2 {
+    position: absolute;
+    height: 200px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #4000ff;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    animation: rotato linear  15s infinite;
   }
  @keyframes rotato{
     0% {transform: rotate(0deg);background: black;}
@@ -372,9 +389,16 @@ img{
     100% {transform: rotate(360deg);background: black;}
  }
  .return{
+    mix-blend-mode: difference; /*happy accident*/
     margin: 8vw;
+    transition: 1s;
 
  }
+
+ .return :hover{
+    letter-spacing: 2px; 
+ }
+
  a{
     color: white;
     text-decoration: none;
@@ -382,15 +406,17 @@ img{
     z-index: 3;
  }
 
- .uptop{
+ .uptop h1{
     font-size: large;
     color: white;
     position: relative;
     bottom: 80vh;
     right: 40vw; 
-    transition: 1s;
- }
- .uptop:hover {letter-spacing: 2px; }
+    transition: 2s ;
+}
+.uptop h1 :hover {
+    letter-spacing: 2px; 
+}
 
  @keyframes updown2{
     0% {bottom: 75vh;}

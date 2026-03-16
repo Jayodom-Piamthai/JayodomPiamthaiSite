@@ -1,4 +1,7 @@
 import './screenCards.css'
+function scrollToBottom() {
+  window.scrollTo({top:document.body.scrollHeight, left: 0,behavior: 'smooth'});
+}
 function AboutMe(){
     return(
     <div className='backgrid'>
@@ -11,11 +14,11 @@ function AboutMe(){
         <div className='doubleContainer'>
             <div id='block1'>
                 <div className='blackBox'>
-                    <h1>so who am i?</h1>
-                    <h2><span id='name'>jayodom piamthai</span> is a humble little software developer 
-                        from Thailand with experience in full-stack web development ,
-                         cyber security , digital designing , game development and more!
-                           this website is made in React.js as a testament to my skills 
+                    <h1>INTRODUCTION</h1>
+                    <h2><span id='name'>jayodom piamthai</span> is a computer engineer grad software developer 
+                        from Thailand with experience in full-stack web development,
+                        Software development, digital designing, AI development, game development and more! <br />
+                           this website is made in React.js to showcase my skills and past works 
                            and as a way to advertise myself to the whole wide world of web!</h2>
                     <div className='blackButton'> 
                         <h2>scroll down to learn more!</h2>
@@ -26,12 +29,13 @@ function AboutMe(){
             <div id='block2'>
                 <div className='blackBox'>
                     <h1>and what can i offer?</h1>
-                    <h2>i can offer you my skills in designing fonts front end pages, 
-                        database schema and such. my skills in developing websites 
-                        ,application and software. my  skills in cybersecurity and 
-                        digital forensics.</h2>
+                    <h2>- Fullstack dev & design <br />
+                    - AI model dev <br />
+                    - Dev Ops <br />
+                    - Software dev <br />
+                    - Game dev</h2> <br />
                     <div className='blackButton2'> 
-                        <h2>interested? <br />- check out my contact -</h2>
+                        <h2 onClick={scrollToBottom}>interested? <br />- check out my contact -</h2>
                     </div>
                 </div>
             </div>
