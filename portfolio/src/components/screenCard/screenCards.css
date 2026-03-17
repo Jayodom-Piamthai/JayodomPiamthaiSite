@@ -1,0 +1,428 @@
+*{
+    /* scroll-margin-block: 100vh; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  
+}
+* ::-webkit-scrollbar {
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+}
+
+
+/* logotext section */
+.screenCard{
+    vertical-align: middle;
+    text-align: center;
+    background-image: url(../../assets/projectAndShits.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    background-clip: text;
+    -webkit--clip: text;
+    color: transparent;
+    font-size: 0.9vw;
+}
+.backdrop{
+    scroll-snap-align: center;
+    display: grid;/*purely for vertical alignment*/
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background: black;
+    height: 100vh;
+    width: 98%;
+    align-items: center;
+    overflow: hidden;
+}
+#middleText{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-justify:distribute;
+    color: white;
+    font-size: 2.55vw;
+    padding-top: 0.3vw;
+    letter-spacing: 0.5vw;
+    animation: stretch ease 6s infinite;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+}
+@keyframes stretch{
+    0% {letter-spacing: 0.5vw}
+    20% {letter-spacing: 0.5vw; color: #ffffff;}
+    40% {letter-spacing:1vw ; color: #ffa600;}
+    70% {letter-spacing:1vw ; color: #ffa600;}
+    80% {letter-spacing: 0.5vw}
+    100% {letter-spacing: 0.5vw}
+}
+#down{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    animation: updown 2s ease-in-out infinite;  
+}
+@keyframes updown{
+    0% {top: 0px;}
+    50% {top: 30px;}
+    100% {top: 0px;}
+}
+
+
+/* about me section */
+.screenCard2{
+    scroll-snap-align: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background: #0066FF;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+.nameBanner{
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 2vw;
+    background-image: url('../../assets/ace3.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -30vw;
+    background-attachment: fixed;
+    letter-spacing: 3.3vw;
+}
+.nameBanner h3{
+    font-size: 3vh;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    color: rgb(0, 0, 0);
+}
+.nameBanner h2{
+    font-size: 9vh;
+    mix-blend-mode: difference;
+    color: rgb(0, 255, 106);
+}
+.doubleContainer{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    vertical-align: middle;
+}
+#block1{
+    grid-column: 1;
+    /* height: 50vh; */
+    /* border: solid # 2px; */
+    padding: 3vw;
+}
+#block2{
+    grid-column: 2;
+    /* height: 50vh; */
+    /* border: solid red 2px; */
+    padding: 3vw;
+}
+.blackBox{
+    display:grid;
+    grid-template-rows: 20% 60% 20%;
+    vertical-align: middle;
+    height: 53vh;
+    color: white;
+    padding-top:1vw ;
+    padding: 2vw;
+    background: black;
+    border-radius: 3vh;
+    /* border: solid red 2px; */
+    
+}
+.blackBox h2{
+    text-align: justify;
+    font-size: 1.5vw;
+    color: #0066FF;
+    mix-blend-mode:difference;
+}
+.backgrid{
+    display: grid;
+}
+#name{
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    
+}
+.blackButton h2{
+    position: relative;
+    display: grid;
+    vertical-align: middle;
+    text-align: center;
+    background: black;
+    padding: 1vw;
+    color: white;
+    border: solid #0066FF 1px;
+    border-radius: 10px;
+    animation: updown 2s infinite;
+}
+.blackButton2 h2{
+    position: relative;
+    display: grid;
+    vertical-align: middle;
+    text-align: center;
+    background: black;
+    padding: 1vw;
+    margin-top: -5vw;
+    color: white;
+    border: solid #0066FF 1px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.blackButton2:hover {letter-spacing: 10px; }
+
+
+/*fullStack*/
+.title{
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 0.66vw;
+}
+.titleHead{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background: black;
+    color: #ff6600;
+}
+.fullThumb{
+    width: 40vw;
+    height: 20vw;
+
+}
+.screenCard3{
+    scroll-snap-align: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background: #ff6600;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+.full{
+    font-size: 3vw;
+    color: red;
+    margin-top: 3vw;
+    width: 90vw;
+    height: 7vw;
+    background-image: url('../../assets/wordart.png');
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode:exclusion;
+    animation: hotline 10s ease-in-out infinite,miami 3s ease-in-out infinite;
+}
+@keyframes hotline {
+    0% {transform:rotate(5deg)}
+    50% {transform:rotate(-5deg)}
+    100% {transform:rotate(5deg)}
+}
+@keyframes miami{
+    0%{filter: invert(1);}
+    50%{filter: invert(0);}
+    100%{filter: invert(1);}
+}
+.wow{
+    position: absolute;
+    margin-top: -5vw;
+    right: 9vw;
+    width: 16vw;
+    height: 10vw;
+    background-image: url('../../assets/wordart(2).png');
+    background-position: center;
+    background-size: cover;
+}
+img{
+    height: 9vw;
+    padding: 0.7vw;
+
+}
+
+/* security */
+.screenCard4{
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    background: #FF0066;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titleBlock{
+    position: absolute;
+    left: 0vw;
+    background: black;
+    padding: 1vw;
+    margin-top: 3vw;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    
+}
+.fancy{
+    animation: lightshow 7s infinite;
+}
+@keyframes lightshow{
+    0% {color: #6600FF;}
+    12% {color: #0066FF;}
+    24% {color: #00ff66;}
+    50% {color: #66ff00;}
+    62% {color:#ff6600;}
+    74% {color:#FF0066;}
+    86% {color: white;}
+    100% {color: #6600FF;}
+}
+.textBox{
+    font-size:15px;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 25vh;
+    height: 60vh;
+    width: 80vw;
+    color: white;
+    padding-top:1vw ;
+    padding: 2vw;
+    background: black;
+    /* border: solid red 2px; */
+    
+}
+.textBox h2::after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  .titleBlock ::after {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+
+  /* endCard */
+  .screenCard5{
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+/* link effect */
+#link{
+    size: 30px;
+    color: #ffff00;
+    mix-blend-mode: difference; /*happy accident*/
+}
+.triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 180px 312px 180px;
+    border-color: transparent transparent black transparent;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    transform: rotate(90deg);
+    animation: rotato linear  6s infinite;
+ }
+ /* HTML: <div class="hexagon"></div> */
+.hexagon {
+    position: absolute;
+    height: 300px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #000000;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    animation: rotato linear  15s infinite;
+  }
+.hexagon2 {
+    position: absolute;
+    height: 200px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #4000ff;
+    mix-blend-mode: difference; /*happy accident*/
+    filter: invert(1);
+    animation: rotato linear  15s infinite;
+  }
+ @keyframes rotato{
+    0% {transform: rotate(0deg);background: black;}
+    25% {transform: rotate(90deg);background:#FF0066;}
+    50% {transform: rotate(180deg);background:#ff6600;}
+    75% {transform: rotate(270deg);background:#0066FF;}
+    100% {transform: rotate(360deg);background: black;}
+ }
+ .return{
+    mix-blend-mode: difference; /*happy accident*/
+    margin: 8vw;
+    transition: 1s;
+
+ }
+
+ .return :hover{
+    letter-spacing: 2px; 
+ }
+
+ a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 3;
+ }
+
+ .uptop h1{
+    font-size: large;
+    color: white;
+    position: relative;
+    bottom: 80vh;
+    right: 40vw; 
+    transition: 2s ;
+}
+.uptop h1 :hover {
+    letter-spacing: 2px; 
+}
+
+ @keyframes updown2{
+    0% {bottom: 75vh;}
+    50% {bottom: 80vh;}
+    100% {bottom: 75vh;}
+}
+.mail{
+    z-index: 1;
+}
