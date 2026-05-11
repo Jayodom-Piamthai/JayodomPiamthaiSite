@@ -1,5 +1,5 @@
-import html from '../../assets/html.png'
-import css from '../../assets/css.png'
+// import html from '../../assets/html.png'
+// import css from '../../assets/css.png'
 import js from '../../assets/js.png'
 import boots from '../../assets/bootstrap.png'
 import exps from '../../assets/express.png'
@@ -7,6 +7,9 @@ import react from '../../assets/react.png'
 import dock from '../../assets/docker.png'
 import sql from '../../assets/mysql.png'
 import github from '../../assets/github.png'
+import angular from '../../assets/angular.png'
+import net from '../../assets/net.png'
+import devops from '../../assets/devops.png'
 
 function FullStack(){
     return(
@@ -21,8 +24,7 @@ function FullStack(){
                 <h1>software and tools</h1>
                 <br />
                 <div>
-                    <img src={html} alt="" />
-                    <img src={css} alt="" />
+                    <img src={devops} alt="" />
                     <img src={js} alt="" />
                     <img src={boots} alt="" />
                     <img src={exps} alt="" />
@@ -30,6 +32,8 @@ function FullStack(){
                     <img src={dock} alt="" />
                     <img src={sql} alt="" />
                     <img src={github} alt="" />
+                    <img src={angular} alt="" />
+                    <img src={net} alt="" />
                     <h2>some of these are also used to make this site!</h2>
                 </div>
             </div>

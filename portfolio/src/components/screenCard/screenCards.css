@@ -297,7 +297,7 @@ img{
     color: white;
     padding-top:1vw ;
     padding: 2vw;
-    background: black;
+    background: rgb(31, 30, 30);
     /* border: solid red 2px; */
     
 }
@@ -322,6 +322,13 @@ img{
       opacity: 0;
     }
   }
+
+.displayBox{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 
   /* endCard */

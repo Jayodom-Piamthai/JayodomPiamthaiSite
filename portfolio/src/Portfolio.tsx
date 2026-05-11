@@ -6,7 +6,8 @@ import FullStack from "./components/screenCard/fullStack"
 import FullStack2 from "./components/screenCard/fullStack2"
 import FullStack3 from "./components/screenCard/fullStack3"
 import LogoText from "./components/screenCard/logoText"
-import Security from "./components/screenCard/Security"
+// import Security from "./components/screenCard/Security"
+import Ai from "./components/screenCard/ai"
 import End from "./components/screenCard/endCard"
 import './portfolio.css'
 function Portfolio() {
@@ -18,7 +19,8 @@ function Portfolio() {
             <FullStack/>
             <FullStack2/>
             <FullStack3/>
-            <Security/>
+            {/* <Security/> */}
+            <Ai/>
             <End/>
         </div>
     )
