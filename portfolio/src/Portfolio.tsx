@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import AboutMe from "./components/screenCard/aboutMe"
 import FullStack from "./components/screenCard/fullStack"
-import FullStackSelf from "./components/screenCard/fullStack1"
+// import FullStackSelf from "./components/screenCard/fullStack1"
 import FullStackEssilor from "./components/screenCard/fullStack5"
 import FullStack2 from "./components/screenCard/fullStack2"
 import FullStack3 from "./components/screenCard/fullStack3"
