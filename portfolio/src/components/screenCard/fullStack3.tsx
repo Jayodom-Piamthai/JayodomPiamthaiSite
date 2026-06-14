@@ -9,7 +9,8 @@ function FullStack2(){
                 <br /><br /><br />
                 <div className='titleHead'>
                     <h1 className='title'>-- KMITL PCC WEBSITE --</h1> <br />
-                    <h2>a web page advertising KMITL PCC computer engineering campus made by a small team of developer <br />
+                    <h3>tools used: HTML,CSS,REACT.js,FIGMA</h3>
+                    <h2>a web page advertising KMITL PCC computer engineering campus made by a small team of developer
                         with my contribution in front end-design and development
                     </h2>
                 </div>

@@ -10,7 +10,7 @@ add these to package.json
 //    https://<githubname>.github.io/<repositoryname>/
 "homepage": "https://jayodom-piamthai.github.io/JayodomPiamthaiSite/",
 "predeploy": "npm run build",
-"deploy": "gh-pages-clean gh-pages -d dist"
+"deploy": "gh-pages-clean gh-pages -d dist",
 
 add this to vite.config.ts in export default:
 

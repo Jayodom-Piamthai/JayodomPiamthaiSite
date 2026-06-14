@@ -195,6 +195,13 @@
 .fullThumb{
     width: 40vw;
     height: 20vw;
+    border-radius: 15px;
+
+}
+.halfThumb{
+    width: 20vw;
+    height: 10vw;
+    border-radius: 15px;
 
 }
 .screenCard3{
@@ -208,6 +215,9 @@
     width: 100%;
     align-items: center;
     overflow: hidden;
+}
+.screenCard3 h3{
+    color: white;
 }
 .full{
     font-size: 3vw;
@@ -348,6 +358,10 @@ img{
     width: 100%;
     align-items: center;
     overflow: hidden;
+}
+.screenCard5 a{
+    font-weight: 800;
+    font-size: 2vw;
 }
 /* link effect */
 #link{

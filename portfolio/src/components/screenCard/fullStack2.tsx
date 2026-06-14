@@ -9,7 +9,8 @@ function FullStack2(){
                 <br /><br /><br />
                 <div className='titleHead'>
                     <h1 className='title'>-- SPOTIFY WEBSITE --</h1> <br />
-                    <h2>spotify mock website made with php whih mysql database that is able to search for music <br />
+                    <h3>tools used: HTML,CSS,FIGMA,SQL,PHP</h3>
+                    <h2>spotify mock website made with php whih mysql database that is able to search for music 
                         login to user account and save history for music listening
                     </h2>
                 </div>

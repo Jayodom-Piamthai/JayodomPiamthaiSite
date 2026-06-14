@@ -17,7 +17,7 @@ function End(){
         </div>
 
         <h3>Generously hosted by: GITHUB</h3>
-        <h3>made with boredom and inspitation from <span>THAILAND</span></h3>
+        <h3>made with boredom and inspiration from <span>THAILAND</span></h3>
         <div> --- </div>
         <h3>JAYODOM "ACE" PIAMTHAI © 2026</h3>
 
